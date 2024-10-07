@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Admission Form</h1>
+        <form id="admissionForm" action="connect.php" method="post">
+
+            <!-- Personal Details -->
+            <div class="form-section" id="section-1">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar1">0%</div>
+                </div>
+                <h2>Personal Details</h2>
+                <label for="fullname">Full Name<span class="required">*</span>:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="dob">Date of Birth<span class="required">*</span>:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender<span class="required">*</span>:</label>
+                <select id="gender" name="gender" required>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="o">Other</option>
+                </select>
+
+                <label for="nationality">Nationality<span class="required">*</span>:</label>
+                <input type="text" id="nationality" name="nationality" required>
+
+                <label for="email">Email<span class="required">*</span>:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number<span class="required">*</span>:</label>
+                <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="1234567890" name="phone" required>
+
+                <div class="form-footer">
+                    <button type="button" onclick="nextSection(2)">Next</button>
+                </div>
+            </div>
+
+            <!-- Educational Background -->
+            <div class="form-section" id="section-2" style="display:none;">
+                <h2>Educational Background</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar2">0%</div>
+                </div>
+
+                <label for="school-name">High School Name<span class="required">*</span>:</label>
+                <input type="text" id="school-name" name="school-name" required>
+
+                <label for="passing-year">Year of Passing<span class="required">*</span>:</label>
+                <input type="text" id="passing-year" name="passing-year" required>
+
+                <label for="marks_10th">Marks Obtained (in %age)<span class="required">*</span>:</label>
+                <input type="text" id="marks_10th" name="marks_10th" required>
+
+                <label for="sr-school-name">Sr. Sec. School Name<span class="required">*</span>:</label>
+                <input type="text" id="sr-school-name" name="sr-school-name" required>
+
+                <label for="sr-passing-year">Year of Passing<span class="required">*</span>:</label>
+                <input type="text" id="sr-passing-year" name="sr-passing-year" required>
+
+                <label for="marks_12th">Marks Obtained (in %age)<span class="required">*</span>:</label>
+                <input type="text" id="marks_12th" name="marks_12th" required>
+
+                <div class="form-footer">
+                    <button type="button" onclick="prevSection(1)">Previous</button>
+                    <button type="button" onclick="nextSection(3)">Next</button>
+                </div>
+            </div>
+
+            <!-- Academic Documents -->
+            <div class="form-section" id="section-3" style="display:none;">
+                <h2>Academic Documents</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar3">0%</div>
+                </div>
+
+                <label for="10th-DMC">10th DMC<span class="required">*</span>:</label>
+                <input type="file" id="10th-DMC" name="10th-DMC" required>
+
+                <label for="12th-DMC">12th DMC<span class="required">*</span>:</label>
+                <input type="file" id="12th-DMC" name="12th-DMC" required>
+
+                <label for="migration">Migration Certificate<span class="required">*</span>:</label>
+                <input type="file" id="migration" name="migration" required>
+
+                <label for="character">Character Certificate<span class="required">*</span>:</label>
+                <input type="file" id="character" name="character" required>
+
+                <label for="test-scores">Standardized Test Scores (JEE, SAT, LEET, ACT, or other):</label>
+                <input type="text" id="test-scores" name="test-scores">
+
+                <div class="form-footer">
+                    <button type="button" onclick="prevSection(2)">Previous</button>
+                    <button type="button" onclick="nextSection(4)">Next</button>
+                </div>
+            </div>
+
+            <!-- Family Information -->
+            <div class="form-section" id="section-4" style="display:none;">
+                <h2>Family Information</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar4">0%</div>
+                </div>
+
+                <label for="father-name">Father's Name<span class="required">*</span>:</label>
+                <input type="text" id="father-name" name="father-name" required>
+
+                <label for="father-occupation">Father's Occupation<span class="required">*</span>:</label>
+                <input type="text" id="father-occupation" name="father-occupation" required>
+
+                <label for="father-contact">Father's Contact Info<span class="required">*</span>:</label>
+                <input type="tel" id="father-contact" name="father-contact" required>
+
+                <label for="mother-name">Mother's Name<span class="required">*</span>:</label>
+                <input type="text" id="mother-name" name="mother-name" required>
+
+                <label for="mother-occupation">Mother's Occupation<span class="required">*</span>:</label>
+                <input type="text" id="mother-occupation" name="mother-occupation" required>
+
+                <label for="mother-contact">Mother's Contact Info<span class="required">*</span>:</label>
+                <input type="tel" id="mother-contact" name="mother-contact" required>
+
+                <label for="income">Family Annual Income<span class="required">*</span>:</label>
+                <input type="text" id="income" name="income" required>
+
+                <div class="form-footer">
+                    <button type="button" onclick="prevSection(3)">Previous</button>
+                    <button type="button" onclick="nextSection(5)">Next</button>
+                </div>
+            </div>
+
+            <!-- Course Selection / Disability info / Extracurricular Activities -->
+            <div class="form-section" id="section-5" style="display:none;">
+                <h2>Course Selection</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar5">0%</div>
+                </div>
+
+                <label for="course">Course<span class="required">*</span>:</label>
+                <input type="text" id="course" name="course" required>
+
+                <h2>Disability Information</h2>
+                <label for="disability">Any Disability:</label>
+                <input type="text" id="disability" name="disability">
+
+                <h2>Extracurricular Activities</h2>
+                <label for="activities">Activities (Sports, Clubs, Organizations, Volunteer Work, Leadership Roles):</label>
+                <textarea id="activities" name="activities"></textarea>
+
+                <div class="form-footer">
+                    <button type="button" onclick="prevSection(4)">Previous</button>
+                    <button type="button" onclick="nextSection(6)">Next</button>
+                </div>
+            </div>
+
+            <!-- Personal Documents -->
+            <div class="form-section" id="section-6" style="display:none;">
+                <h2>Personal Documents</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar6">0%</div>
+                </div>
+
+                <label for="birth-certificate">Birth Certificate<span class="required">*</span>:</label>
+                <input type="file" id="birth-certificate" name="birth-certificate" required>
+
+                <label for="aadhar">Aadhar Card<span class="required">*</span>:</label>
+                <input type="file" id="aadhar" name="aadhar" required>
+
+                <label for="domicile">Domicile<span class="required">*</span>:</label>
+                <input type="file" id="domicile" name="domicile" required>
+
+                <label for="family-id">Family ID<span class="required">*</span>:</label>
+                <input type="file" id="family-id" name="family-id" required>
+
+                <div class="form-footer">
+                    <button type="button" onclick="prevSection(5)">Previous</button>
+                    <button type="button" onclick="nextSection(7)">Next</button>
+                </div>
+            </div>
+
+            <!-- Transport/Hostel -->
+            <div class="form-section" id="section-7" style="display:none;">
+                <h2>Transport and Hostel Facilities</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar7">0%</div>
+                </div>
+
+                <fieldset>
+                    <legend>Do you require any of the following?</legend>
+                    <label>
+                        <input type="radio" name="facility" value="transport">
+                        Transport Facility
+                    </label><br>
+                    <label>
+                        <input type="radio" name="facility" value="hostel">
+                        Hostel Facility
+                    </label><br>
+                    <label>
+                        <input type="radio" name="facility" value="none">
+                        None
+                    </label>
+                </fieldset>
+
+                <div class="form-footer">
+                    <button type="button" onclick="prevSection(6)">Previous</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+.form-section {
+    display: none;
+    position: relative;
+    padding-bottom: 60px; /* Add padding at the bottom to avoid overlap with the buttons */
+}
+
+.form-section h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+button[type="button"], button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cb2530;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+}
+
+button[type="button"]:hover, button[type="submit"]:hover {
+    background-color: #cb2530;
+}
+
+button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.form-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+    /* background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); */
+}
+
+
+
+
+.progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    height: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 20px; /* Aligns text vertically */
+}
