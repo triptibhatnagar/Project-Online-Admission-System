@@ -9,3 +9,8 @@ closeMenuBtn.addEventListener("click" , () => {
 menuBtn.addEventListener("click" , () => {
     menuBtn.click();
 })
+
+const applyBtn = document.querySelector('#apply-btn')
+applyBtn.addEventListener("click", () => {
+    alert("Login/Signup first...");
+})

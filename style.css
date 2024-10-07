@@ -302,7 +302,12 @@ ul#bullet-list li:before {
 
 /* testimonials */
 .reviews{
+    /* background-color: #edd17a; */
     background-color: #fff;
+    /* background: url(images/test-bg.jpg);
+    background-position:center;
+    background-size: cover;
+    min-height: 100vh; */
 }
 
 .reviews h2{
@@ -488,24 +493,25 @@ ul#bullet-list li:before {
     border-left: 4px solid gray;
 }
 
+/* footer */
 .footer{
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: red;
+    background-color: rgb(244, 215, 215);
 }
 
 .footer .social{
     text-align: center;
     padding-bottom: 25px;
-    color: #fff;
+    color: black;
 }
 
 .footer .social a{
     font-size: 25px;
-    color: #fff;
-    border: 2px solid #fff;
+    color: #010101;
+    border: 2px solid #010101;
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -518,8 +524,8 @@ ul#bullet-list li:before {
 
 .footer .social a:hover{
     transform: scale(1.2)translateY(-10px);
-    background-color: #fff;
-    color: #dd944c;
+    background-color: #010101;
+    color: rgb(244, 215, 215);
 }
 
 .footer ul{
@@ -537,14 +543,22 @@ ul#bullet-list li:before {
 }
 
 .footer ul li a{
-    color: #fff;
+    color: #010101;
     border-bottom: 3px solid transparent;
     transition: 0.2s ease;
     text-decoration: none;
 }
 
 .footer ul li a:hover{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #010101;
+}
+
+.footer .copyright {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #010101;
+
 }
 
 @media(max-width:1200px){
