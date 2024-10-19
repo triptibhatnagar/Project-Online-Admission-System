@@ -34,29 +34,31 @@ body {
 }
 
 .button-box {
-    width: 220px;
+    /* width: 0px; */
+    text-align: center;
     margin: 35px auto;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.209);
-    box-shadow: 0 0 25px 5px #0000003b;
+    /* background-color: rgba(255, 255, 255, 0.209);
+    box-shadow: 0 0 25px 5px #0000003b; */
     border-radius: 30px;
 }
 
 .toggle-btn {
     padding: 10px 30px;
-    cursor: pointer;
+    /* cursor: pointer; */
     background: transparent;
+    /* border-radius: 20px; */
     border: 0;
     outline: none;
     position: relative;
-    color: black;
-    font-weight: 400;
-    transition: 0.3s ease;   
+    color: #fff;
+    font-weight: 700;
+    /* transition: 0.3s ease;    */
 }
 
-.toggle-btn:hover {
+/* .toggle-btn:hover {
     transform: scale(1.1);
-}
+} */
 
 #btn {
     top: 0;
@@ -69,10 +71,10 @@ body {
     transition: 0.5s;
 }
 
-.social-icons {
+/* .social-icons {
     margin: 30px auto;
     text-align: center;
-}
+} */
 
 .social-icons i {
     font-size: 30px;
@@ -153,3 +155,18 @@ input::placeholder {
 .terms {
     color: white;
 }
+/* 
+#choose {
+    position: relative;
+    display: inline-block;
+}
+
+#choose-student, #choose-admin {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+} */

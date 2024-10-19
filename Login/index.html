@@ -6,20 +6,23 @@
     <title>Login/Signup Form</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="hero">
         <div class="form-box">
             <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="login()">LogIn</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                <!-- <div id="btn"></div> -->
+                <button type="button" class="toggle-btn" onclick="login()"><h2>Login Here</h2></button>
+                <!-- <button type="button" class="toggle-btn" onclick="register()">Register</button> -->
             </div>
-            <div class="social-icons">
+            <!-- <div class="social-icons">
                 <i class="bx bxl-facebook-circle"></i>
                 <i class="bx bxl-instagram"></i>
                 <i class="bx bxl-twitter"></i>
-            </div>
+            </div> -->
             <form id="login" class="input-group">
                 <input type="text" class="input-field" placeholder="User Id" required>
                 <input type="text" class="input-field" placeholder="Enter Password" required>
@@ -29,6 +32,10 @@
             </form>
 
             <form id="register" class="input-group">
+                <!-- <select id="choose" name="choose" required>
+                    <option value="s" id="choose-student">Student</option>
+                    <option value="a" id="choose-admin">Admin</option>
+                </select> -->
                 <input type="text" class="input-field" placeholder="User Id" required>
                 <input type="email" class="input-field" placeholder="Email" required>
                 <input type="text" class="input-field" placeholder="Enter Password">
